@@ -1,16 +1,21 @@
+/* box border sizing */
 * {
     box-sizing: border-box;
 }
+/* body background color */
 body{
     background-color: hsl(210, 17%, 98%);
     color:black;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'bangers', cursive;
+    margin-left: 50px;
+    margin-right: 50px;
 
 }
 .g{
 width: 80%;
 margin: 0 auto;
 }
+/* header tag */
 header{
     background-color: aliceblue;
 
@@ -20,14 +25,20 @@ header::after{
     display: table;
     clear: both;
 }
+/* navbar logo image */
 .logo{
     float: right;
     padding: 1px 0;
-    padding-right: 10px;
+    padding-right: 35px;
 }
+/* navbar */
 nav{
+    
+    overflow: hidden;
     float: left;
     font-weight: 100;
+    position: sticky;
+    top: 40px;
 
 }
 nav ul{
@@ -49,52 +60,71 @@ nav a{
 nav a:hover {
     color:black;
 }
+/* h1 tag */
 h1{
-    padding-top:198px;
-    padding-bottom: 50px;
+    padding-right: 198px;
+    padding-left: 19px;
+    padding-top:125px;
+    padding-bottom: 80px;
     text-align: center;
     text-transform: uppercase;
     padding-left:198px;
 }
+/* It's the button layout */
 .botton{
+    border-style: solid;
+    border-width: 1px;
+    border-color:black;
+    box-shadow: 2px;
+    text-align: center;
+    background-color:hsl(210, 17%, 98%);
+    color:white;
+    padding-top: 8px;
     padding-left: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 30px;
-    padding-bottom: 15px;
-    margin-left: 30px;
-    margin-right: 15px;
-    background-color:greenyellow /* None */
-    border: 5px;
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+    padding-right: 50px;
+    padding-bottom: 8px;
+    margin-left: 373px; 
+    font-size: 20px;
+    font: bolder
+}
+.botton  a{
+        color:lightslategray;
+        text-decoration: none;
+        text-transform: uppercase;
+    
+    }
+
+.botton a:hover {
+    color:black;
 }
 
-.button {background-color:None; color: black;} /* Gray */ 
+.button {background-color:None; color: black;}  
 
 .img{
     box-align:right;
 }
-.botton{
-    margin-left:155px;
-}
-.on{
-    padding-top: 40px;
-    align:right;
-    padding-right: 30px;
-}
 
+/*elment class floateing  */
+.in{
+    float: right;
+    padding-top: 80px;
+    margin-right: 120px;
+}
+/* Remove link under-line */
+.in a{
+    color:lightslategray;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
 
 /* Create two equal columns that floats next to each other */
 .column {
+    width:100%;
     float: left;
     width: 50%;
     padding: 10px;
-    /* Should be removed. Only for demonstration */
+    
 }
 
 /* Clear floats after the columns */
@@ -103,22 +133,27 @@ h1{
     display: table;
     clear: both;
 }
+/*Picture hight and width */
 .pic{
     height: 260px;
 }
 .colum {
+        width:100%;
         float: right;
         width: 33.33%;
         padding: 10px;
-         /* Should be removed. Only for demonstration */
+         
       }
-      
-      /* Clear floats after the columns */
+/* Clear floats after the columns */
 .ro:after {
         content: "";
         display: table;
         clear: both;
       }
+
+/* Footer align center and bottom padding */
 footer{
+    
     text-align: center;
+    padding-bottom: 10px;
 }
